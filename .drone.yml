@@ -1,0 +1,6 @@
+build:
+  image: maven:latest
+  commands:
+    - cd example-voting-app/worker
+    - mvn dependency:resolve
+    - mvn verify
